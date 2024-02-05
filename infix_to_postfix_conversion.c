@@ -25,7 +25,7 @@ int main()
         else if (str[i] == ')')
         {
             while ((x = pop()) != '(')
-                printf("%c ", pop());
+                printf("%c ", x);
         }
         // if precedence of operator in stack is greater than equal to precedence of scanned operator
         else
