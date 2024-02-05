@@ -14,12 +14,12 @@ void input()
     newnode = (node *)malloc(sizeof(node));
     printf("\nEnter value : ");
     scanf("%d", &newnode->data);
+    newnode->next = NULL;
 }
 
 void create_list()
 {
     input();
-    newnode->next = NULL;
     if (head == NULL)
     {
         head = newnode;
