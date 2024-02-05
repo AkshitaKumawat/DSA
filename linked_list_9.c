@@ -57,7 +57,6 @@ void insert_at_beginning()
 void insert_at_end()
 {
     input();
-    newnode->next = NULL;
     temp = head;
     while(temp->next != NULL)
          temp = temp->next;
