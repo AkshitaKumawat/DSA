@@ -27,9 +27,10 @@ int main()
             while ((x = pop()) != '(')
                 printf("%c ", x);
         }
-        // if precedence of operator in stack is greater than equal to precedence of scanned operator
+        
         else
         {
+            // if precedence of operator in stack is greater than equal to precedence of scanned operator then pop the element
             while (precedence(stack[top]) >= precedence(str[i]) && str[i]!='^')
                 printf("%c ", pop());
             push(str[i]);
